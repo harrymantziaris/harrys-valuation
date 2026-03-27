@@ -12,7 +12,7 @@ np.random.seed(42)
 st.set_page_config(page_title="Harrys Valuation", page_icon="H", layout="wide")
 
 # ── Load Data ──
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = "."
 bulker    = pd.read_csv(os.path.join(DATA_DIR, "00_bulker_vessel_values.csv"))
 tanker    = pd.read_csv(os.path.join(DATA_DIR, "01_tanker_vessel_values.csv"))
 container = pd.read_csv(os.path.join(DATA_DIR, "02_container_vessel_values.csv"))
